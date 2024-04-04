@@ -1,0 +1,68 @@
+/* FormStyles.css */
+
+.form-container {
+  position: relative;
+  width: 300px;
+  height: 60px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 2%;
+  height: 50%; /* Ensure the container takes up full height */
+  /* Enable vertical scrolling */
+  margin-top: -65vh;
+  margin-left: 75%;
+}
+@media (max-width: 768px) {
+  .form-container {
+    width: 95%;
+    height: 50vh;
+    object-fit: cover;
+    margin-top: 10vh;
+    margin-left: 1vh;
+  }
+}
+form {
+  width: 100%;
+  height: 250px;
+}
+
+.form h4 {
+  font-size: 20px;
+  color: #4e408b;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+select,
+button {
+  font-size: 14px;
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  select {
+    width: 72vh;
+    height: 7vh;
+    object-fit: cover;
+  }
+}
+
+button {
+  background-color: #4e408b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  margin-top: 15vh;
+}
+
+button:hover {
+  background-color: #413a4d;
+}

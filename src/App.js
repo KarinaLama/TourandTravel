@@ -2,11 +2,13 @@
 import {  Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './routes/Home';
-import About from './routes/About';
-import Product from './routes/Product';
-import ProductDetails from './routes/ProductDetails';
-import Checkout from './routes/Checkout';
-import CheckoutPage from './routes/CheckoutPage';
+import AboutUs from './routes/AboutUs';
+import Nepal from './routes/Nepal';
+import Bhutan from './routes/Bhutan';
+import Tibet from './routes/Tibet'
+import India from './routes/India';
+import Inquiry from './routes/Inquiry';
+import Contact from './routes/Contact';
 
 
 
@@ -16,12 +18,16 @@ function App() {
    <div >
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/about" element={<About/>}/>
-      <Route path="/Product" element={<Product/>}/>
-      <Route path="/Cart" element={<CheckoutPage/>}/>
-      
-      <Route path="/product-details/:productId" element={<ProductDetails />} />
-      <Route path="/checkout" component={Checkout} />
+      <Route path="/AboutUs" element={<AboutUs/>}/>
+      <Route path="/Nepal" element={<Nepal/>}/>
+      <Route path="/Bhutan" element={<Bhutan/>}/>
+      <Route path='/Tibet' element={<Tibet/>}/>
+      <Route path='/India' element={<India/>}/>
+      <Route path='/Inquiry' element={<Inquiry/>}/>
+      <Route path='/Contact' element={<Contact/>}/>
+
+
+
 
   
 

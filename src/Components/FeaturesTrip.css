@@ -1,0 +1,15 @@
+.main {
+    margin-left: 10px;
+ 
+}
+.main h2{
+    color: rgb(10, 85, 10);
+}
+.main p{
+    margin-right: 60vh;
+}
+@media (max-width: 768px) {
+    .main p {
+      margin-right: 0px;
+    }
+  }

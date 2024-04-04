@@ -1,0 +1,31 @@
+.contact {
+    background-color:rgb(41, 88, 66) ;
+    color: white;
+    margin-top: 5vh;
+    margin-left:1vh ;
+    width: 46vh;
+    margin-left: 75%;
+    
+}
+@media (max-width: 768px) {
+    .contact {
+      width: 85vh;
+      height: 5vh;
+     
+      margin-top: 5vh;
+      margin-left: 1vh;
+    }
+  }
+.contact p{
+    margin-left: 3px;
+}
+.address {
+    margin-left: 75%;
+    font-size: 15px;
+}
+@media (max-width: 768px) {
+    .address {
+      
+      margin-left: 1vh;
+    }
+  }

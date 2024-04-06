@@ -1,0 +1,16 @@
+/* ParentComponent.css */
+
+.parent-container {
+    display: flex; /* Use flexbox layout */
+  }
+  
+  .left-column {
+    flex: 1; /* Take up remaining space */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .right-column {
+    flex: 1; /* Take up remaining space */
+    padding: 20px; /* Add padding for spacing */
+  }
+  

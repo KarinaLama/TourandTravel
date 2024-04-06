@@ -52,12 +52,6 @@ const TripSearchForm = () => {
             <option value="Cultural Tour">Helicopter Tour</option>
             <option value="Cultural Tour">Special Tours</option>
             <option value="Cultural Tour">Others</option>
-
-
-
-
-
-
           </select>
         </label>
         <br />
@@ -70,8 +64,6 @@ const TripSearchForm = () => {
             <option value="1 Month">16 - 20 days</option>
             <option value="1 Month">11 - 30 days</option>
             <option value="1 Month">dMore than 30 days</option>
-
-
           </select>
         </label>
         <br />

@@ -1,13 +1,31 @@
-
-.container p{
+.container p {
     margin-top: -15%;
     margin-right: 40vh;
     margin-left: 1vh;
 }
+
+@media (max-width: 798px) {
+    .container p {
+        width: 140%; /* Adjust the width for smaller screens */
+        height: auto; /* Allow the height to adjust proportionally */
+        object-fit: cover; /* Ensure the image covers its container */
+        margin-top: -11vh; /* Adjust the top margin */
+        margin-left: -14vh; /* Adjust the left margin */
+    }
+}
+
 .container img {
     margin-left: 30px;
 }
-.container main{
+
+.container main {
     margin-top: 100px;
 }
-  
+
+@media (max-width: 798px) {
+    .container main {
+        margin-top: -11vh; /* Adjust the top margin */
+        margin-left: -13vh; /* Adjust the left margin */
+        margin-right: 100vh; /* Adjust the right margin */
+    }
+}

@@ -7,7 +7,7 @@
   padding: 10px 10px;
   position: fixed;
   width: 100%;
-
+  
   z-index: 9999;
 
 }
@@ -31,6 +31,12 @@
 }
 
 /* Hide the box on small screens */
+@media screen and (max-width: 700px) {
+  .navbar-logo {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .right-corner-box {
     display: none;

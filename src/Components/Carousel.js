@@ -14,7 +14,13 @@ const Carousel = ({ images }) => {
   };
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex((prevIndex) => {
+      if (prevIndex === images.length - 1) {
+        return 0; // Reset to the first image if at the last image
+      } else {
+        return prevIndex + 1; // Move to the next image
+      }
+    });
   };
 
   const prevSlide = () => {
@@ -29,12 +35,15 @@ const Carousel = ({ images }) => {
           <button onClick={nextSlide} style={buttonStyleRight}>{'>'}</button>
         </>
       )}
-      <img src={images[currentIndex]} alt="carousel" className="carousel-image" />
+      {images.map((image, index) => (
+        <div key={index} style={{ display: index === currentIndex ? 'block' : 'none' }}>
+          <img src={image.images} alt="carousel" className="carousel-image" style={{ position: 'relative', marginTop: '15vh' }} />
+          {image.watermark && <div className="watermark" style={watermarkStyle}>{image.watermark}</div>}
+        </div>
+      ))}
     </div>
   );
 };
-
-
 
 // Style for the left button
 const buttonStyleLeft = {
@@ -69,16 +78,17 @@ const buttonStyleRight = {
   cursor: 'pointer',
   zIndex: '1', // Ensure buttons are above the image
 };
-// const imageStyle = {
-//     width: '65%', // Adjust the width of the image as needed
-//     height: '30%', // Maintain aspect ratio
-//     display: 'block',
-//     margin: '10vh 5vh 0', // Center the image horizontally
 
-//     '@media (max-width: 768px)': {
-//         width: '100%', // Adjusted width for smaller screens
-//         height: '100vh', // Adjusted height for smaller screens
-//         objectFit: 'cover', // Ensure image covers the entire container
-//       }
-//   };
+// Style for the watermark
+const watermarkStyle = {
+  position: 'absolute',
+  bottom: '0px', // Adjust the distance from the bottom edge
+  right: '10px', // Adjust the distance from the right edge
+  backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent white background
+  color: 'white', // Watermark text color
+  padding: '5px', // Padding around the text
+  borderRadius: '5px', // Rounded corners
+  fontWeight: 'bold'
+};
+
 export default Carousel;

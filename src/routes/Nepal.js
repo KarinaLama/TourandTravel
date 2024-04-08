@@ -6,6 +6,7 @@ import image5 from "../images/image5.jpg"
 import TripSearchForm from '../Components/TripSearchForm';
 import ContactAddress from '../Components/ContactAddress';
 import Details from '../Nepal/Details';
+import TravelOptions from '../Nepal/TravelOptions';
 
 function Nepal() {
   const images = [
@@ -24,6 +25,7 @@ function Nepal() {
       </div>
       <TripSearchForm/>
       <ContactAddress/>
+      <TravelOptions/>
       <Details image={image5} />     
         
        
